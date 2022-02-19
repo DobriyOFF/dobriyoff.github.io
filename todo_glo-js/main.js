@@ -6,6 +6,9 @@ let todoTitle = 'Список дел';
 
 const toDoData = [];
 
+const isText = (text) => {
+    return text && text.trim().length > 0;
+};
 
 function addTodo(text, completed = false) {
     const todo = {
@@ -35,12 +38,12 @@ const render = function () {
             todoList.append(li);
         }
 
-        li.querySelector('.todo-complete').addEventListener('click', function() {
+        li.querySelector('.todo-complete').addEventListener('click', function () {
             item.completed = !item.completed;
             saveToLocalStorage();
             render();
         });
-        li.querySelector('.todo-remove').addEventListener('click', function(event) {
+        li.querySelector('.todo-remove').addEventListener('click', function (event) {
             toDoData.splice(index, 1);
             saveToLocalStorage();
             render();
@@ -55,19 +58,20 @@ function createTodoApp(defaultTodos = []) {
         }
         saveToLocalStorage();
     }
-    
+
     todoControl.addEventListener('submit', function (event) {
         event.preventDefault();
-    
-        const newToDo = {
-            text: headerInput.value,
-            completed: false
+        if (isText(headerInput.value)) {
+            const newToDo = {
+                text: headerInput.value,
+                completed: false
+            }
+
+            toDoData.push(newToDo);
+            headerInput.value = '';
+            render();
+            saveToLocalStorage();
         }
-    
-        toDoData.push(newToDo);
-        headerInput.value = '';
-        render();
-        saveToLocalStorage();
     });
 }
 
