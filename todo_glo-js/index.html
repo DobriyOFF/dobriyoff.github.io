@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="./main.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let defaultTodos = [
+            // {
+            //         text: 'Сварить кофе',
+            //         completed: false
+            //     },
+            //     {
+            //         text: 'Помыть посуду',
+            //         completed: false
+            //     }
+            ];
+
+            if (localStorage) {
+                try {
+                    defaultTodos = JSON.parse(localStorage.getItem('Список дел'));
+                    console.log(defaultTodos)
+                } catch (ex) {
+                    console.log('В LocalStorage нет задач' + ex);
+                }
+            }
+            createTodoApp(defaultTodos);
+        });
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <form class="todo-control">
+            <label><input class="header-input" type="text" placeholder="Какие планы?"></label>
+            <button class="header-button" id="add" type="submit"></button>
+        </form>
+    </header>
+
+    <div class="todo-container">
+
+        <ul class="todo todo-list" id="todo">
+        </ul>
+        <ul class="todo todo-completed" id="completed">
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
