@@ -1,0 +1,365 @@
+.guests {
+    padding-top: 90px;
+    padding-bottom: 94px;
+    background: #121723;
+    color: var(--white);
+}
+
+.guests__item:hover .guests__item-top {
+    color: #AA9DFA;
+}
+
+.guests__item:hover .guests__item-circle::after {
+    border-color: #AA9DFA;
+}
+
+.guests__item:hover .guests__item-wrapper::after {
+    border-color: #AA9DFA;
+}
+
+.guests__item:focus .guests__item-top {
+    color: var(--white);
+    background-color: #292E39;
+}
+
+.guests__item:focus .guests__item-circle::after {
+    border-color: #A1A6B4
+}
+
+.guests__item:focus .guests__item-wrapper::after {
+    border-color: #A1A6B4
+}
+
+.guests__title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.guests__span {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.guests__desc {
+    margin-top: 10px;
+    width: 825px;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--gray);
+}
+
+/** Список раскрывающийся **/
+.guests__wrapper, .guests__list, .guests__item-bottom {
+    display: flex;
+}
+
+.guests__wrapper {
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.guests__list {
+    flex-direction: column;
+    width: 66%;
+}
+
+.guests__item-wrapper, .guests__item-circle {
+    position: relative;
+}
+
+.guests__item-circle::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 3px;
+
+    pointer-events: none;
+
+    width: 38px;
+    height: 38px;
+    border: 2px solid #A1A6B4;
+    border-radius: 50%;
+}
+
+/** Это на актив **/
+/*.guests__item-wrapper::before,*/
+/*.guests__item-wrapper::after {*/
+/*    display: block;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 42px;*/
+/*    right: 17px;*/
+/*    transform: rotate(135deg);*/
+
+/*    pointer-events: none;*/
+
+/*    width: 11px;*/
+/*    height: 11px;*/
+/*    border-left: 2px solid #A1A6B4;*/
+/*    border-bottom: 2px solid #A1A6B4;*/
+/*}*/
+
+.guests__item-wrapper::before,
+.guests__item-wrapper::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 37px;
+    right: 17px;
+    transform: rotate(-45deg);
+
+    pointer-events: none;
+
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid #A1A6B4;
+    border-bottom: 2px solid #A1A6B4;
+}
+
+.guests__item-top {
+    display: flex;
+    padding: 34px 0px 30px 0px;
+    width: 100%;
+    align-items: first;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.guests__item-bottom {
+    margin-top: 13px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.guests__bottom-item {
+    padding-top: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 25%
+}
+
+.gusts__bottom-link {
+    color: var(--white);
+}
+
+.deactive {
+    display: none;
+}
+
+.active {
+    border-top: 1px solid #AA9DFA;
+    border-bottom: 1px solid #AA9DFA;
+}
+
+.active-author {
+    color: #AA9DFA;
+}
+
+/** Карточка Автора **/
+
+.guests__card {
+    margin-left: 30px;
+    width: 350px;
+}
+
+.guests__card-wrapper {
+    display: flex;
+    margin-top: 11px;
+}
+
+.guests__card-link {
+    margin-right: 34px;
+}
+
+.guests__card-social:hover > path {
+    fill: #6D31EE;
+}
+
+.guests__card-social:focus > path {
+    fill: #AA9DFA;
+}
+
+.guests__card-social:active > path {
+    fill: #4F28A5;
+}
+
+.guests__card-title {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.guests__card-desc {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--gray);
+}
+
+.guests__card-btn {
+    margin-top: 30px;
+    padding: 9px 20px 9px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #AA9DFA;
+    border-radius: 77px;
+    color: #AA9DFA;
+}
+
+.guests__card-btn:hover {
+    background: #AA9DFA;
+    color: var(--white);
+}
+
+.guests__card-btn:focus {
+    border-color: transparent;
+    background: #6D31EE;
+    color: var(--white);
+}
+
+.guests__card-btn:active {
+    background: #4F28A5;
+    color: var(--white);
+}
+
+@media(max-width: 1024px) {
+    .guests__desc {
+        width: 550px;
+    }
+
+    .guests__list {
+        width: 90%;
+    }
+
+    .guests__item-bottom {
+        margin-bottom: 30px;
+    }
+
+    .guests__bottom-item {
+        padding-bottom: 0;
+        width: 33%;
+    }
+
+    .guests__card-wrapper {
+        margin-top: 7px;
+    }
+
+    .guests__card {
+        margin-left: 30px;
+    }
+
+    .guests__card-title {
+        margin-top: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    .guests__wrapper {
+        flex-direction: column;
+    }
+
+    .guests__list {
+        width: 100%;
+    }
+
+    .guests__item-bottom {
+        margin-top: 0;
+    }
+
+    .guests__bottom-item {
+        padding-top: 28px;
+    }
+
+    .guests__card {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .guests__card-desc {
+        width: 76%;
+    }
+
+    .guests__desc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .guests {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+    .guests__title {
+        font-size: 24px;
+    }
+
+    .guests__span {
+        font-size: 14px;
+    }
+
+    .guests__desc {
+        font-size: 14px;
+    }
+
+    .guests__wrapper {
+        margin-top: 30px;
+    }
+
+    .guests__item-top {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 16px;
+    }
+
+    .guests__item-circle::after {
+        top: 12px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .guests__item-wrapper::before, .guests__item-wrapper::after {
+        top: 20px;
+        right: 14px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .guests__item-bottom {
+        justify-content: space-between;
+    }
+
+    .guests__bottom-item {
+        font-size: 14px;
+    }
+
+    .guests__bottom-item {
+        width: 43%;
+    }
+
+    .guests__card-img {
+        height: 159px;
+    }
+
+    .guests__card-social {
+        width: 36px;
+        height: 36px;
+    }
+
+    .guests__card-desc {
+        width: 100%;
+    }
+}

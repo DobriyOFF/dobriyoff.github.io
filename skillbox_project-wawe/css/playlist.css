@@ -1,0 +1,507 @@
+.playlist__container {
+    margin-top: 92px;
+    margin-bottom: 59px;
+}
+
+.playlist__wrapper, .radio__form {
+    display: flex;
+}
+
+.playlist__genre {
+}
+
+.playlist__title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.radio__form {
+    flex-direction: column;
+    width: 321px;
+    border-bottom: 1px solid #D2D5DD;;
+}
+
+.playlist__radio-wrapper {
+    margin-bottom: 13px;
+}
+
+.playlist__form-desc {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.playlist__form-label {
+    font-size: 20px;
+}
+
+/* для элемента input c type="radio" */
+.playlist__form-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+/* для элемента .playlist__form-label связанного с .playlist__form-input */
+.playlist__form-input+.playlist__form-label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+/* создание в .playlist__form-label псевдоэлемента  before со следующими стилями */
+.playlist__form-input+.playlist__form-label::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #A1A6B4;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+/* стили при наведении курсора на радио */
+.playlist__form-input:not(:disabled):not(:checked)+.playlist__form-label:hover::before {
+    border-color: #6D31EE;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.playlist__form-input:not(:disabled):active+.playlist__form-label::before {
+    background-color: #6D31EE;
+    border-color: #6D31EE;
+}
+/* стили для радиокнопки, находящейся в фокусе подсветка вокруг радиокнопки*/
+/*.playlist__form-input:focus+.playlist__form-label::before {*/
+/*    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+/*}*/
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.playlist__form-input:focus:not(:checked)+.playlist__form-label::before {
+    border-color: #80bdff;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.playlist__form-input:checked+.playlist__form-label::before {
+    border-color: #6D31EE;
+    background-color: #6D31EE;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.playlist__form-input:disabled+.playlist__form-label::before {
+    background-color: #e9ecef;
+}
+
+.playlist__desc {
+    margin-top: 40px;
+}
+
+.playlist__desc, .playlist__span{
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray);
+}
+
+.playlist__span {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.playlist__18 {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    font-size: 12px;
+    color: #A1A6B4;
+}
+
+.playlist__18-circle {
+    position: relative;
+    margin-top: 5px;
+}
+
+.playlist__18-circle::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    pointer-events: none;
+
+    width: 27px;
+    height: 27px;
+    border: 1px solid #A1A6B4;
+    border-radius: 50%;
+}
+
+/** Карточки **/
+.playlist__songs {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 59px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*.playlist__item {*/
+/*    width: 160px;*/
+/*}*/
+
+.playlist__item {
+    margin-bottom: 25px;
+}
+
+.playlist__item-ico {
+    position: absolute;
+    top: 4px;
+    left: 4px
+}
+
+.playlist__shadow {
+    position: absolute;
+    top: 0px;
+    left: 135px;
+    width: 24px;
+    height: 20px;
+    background: black;
+}
+
+.playlist__item-photo1 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo1.jpg");
+}
+.playlist__item-photo2 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo2.jpg");
+}
+.playlist__item-photo3 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo3.jpg");
+}
+.playlist__item-photo4 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo4.jpg");
+}
+.playlist__item-photo5 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo5.jpg");
+}
+.playlist__item-photo6 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo6.jpg");
+}
+.playlist__item-photo7 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo7.jpg");
+}
+.playlist__item-photo8 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo8.jpg");
+}
+.playlist__item-photo9 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo9.jpg");
+}
+.playlist__item-photo10 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo10.jpg");
+}
+.playlist__item-photo11 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo11.jpg");
+}
+.playlist__item-photo12 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo12.jpg");
+}
+
+.playlist__item-wrapper {
+    padding: 16px;
+    width: 160px;
+    border-left: 1px solid #E6E8EC;
+    border-right: 1px solid #E6E8EC;
+    border-bottom: 1px solid #E6E8EC;
+}
+
+.playlist__item-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.playlist__item-desc {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #A1A6B4;
+}
+
+.playlist__item:hover {
+    background: #6D31EE;
+}
+
+.playlist__item:hover .playlist__item-wrapper{
+    background: #6D31EE;
+    border-left: 1px solid #6D31EE;
+    border-right: 1px solid #6D31EE;
+    border-bottom: 1px solid #6D31EE;
+}
+
+.playlist__item:hover .playlist__item-title {
+    color: var(--white);
+}
+
+.playlist__item:hover .playlist__item-desc {
+    color: var(--white);
+}
+
+.playlist__item:focus {
+    background: #AA9DFA;
+}
+
+.playlist__item:focus .playlist__item-wrapper{
+    background: #AA9DFA;
+    border-left: 1px solid #AA9DFA;
+    border-right: 1px solid #AA9DFA;
+    border-bottom: 1px solid #AA9DFA;
+}
+
+.playlist__item:focus .playlist__item-title {
+    color: var(--black);
+}
+
+.playlist__item:focus .playlist__item-desc {
+    color: var(--black);
+}
+
+@media(max-width:1686px) {
+    .playlist__genre {
+        width: 28%;
+    }
+
+    .radio__form {
+        width: 100%;
+    }
+
+    .playlist__songs {
+        width: 86%;
+    }
+}
+
+.playlist__footer-table {
+    display: none;
+}
+
+.playlist__form-desc-table {
+    display: none;
+}
+
+@media(max-width:1600px) {
+    .playlist__genre {
+        width: 26%;
+    }
+
+    .radio__form {
+        width: 100%;
+    }
+
+    .playlist__songs {
+        width: 65%;
+    }
+}
+
+@media(max-width:1234px) {
+    .playlist__genre {
+        width: 27%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .playlist__wrapper {
+        flex-direction: column;
+    }
+
+    .playlist__container {
+        margin-bottom: 125px;
+    }
+
+    .playlist__header-desktop {
+        display: none;
+    }
+
+    .radio__form {
+        border: none;
+    }
+
+    .playlist__form-desc-table {
+        display: block;
+    }
+
+    .playlist__form-desc {
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+
+    .radio__form {
+        width: 490px;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    .playlist__radio-wrapper {
+        margin-bottom: 14px;
+    }
+
+    .playlist__songs {
+        margin-top: 13px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .playlist__item {
+        display: flex;
+        margin-bottom: 30px;
+        width: 255px;
+    }
+
+    .playlist__shadow {
+        left: 0;
+    }
+
+    .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
+        width: 112px;
+        height: 112px;
+    }
+
+    .playlist__item-wrapper {
+        padding: 39px 0px 20px 8px;
+        width: 143px;
+        height: 112px;
+        border-top: 1px solid #E6E8EC;
+    }
+
+    .playlist__desc {
+        margin-top: 0;
+    }
+
+    .playlist__footer-table {
+        display: block;
+        margin-top: 12px;
+        padding-top: 38px;
+        border-top: 1px solid #D2D5DD;
+    }
+}
+
+@media (max-width: 768px) {
+    .playlist__genre {
+        width: 100%;
+    }
+
+    .radio__form {
+        width: 100%;
+    }
+
+    .playlist__radio-wrapper-left {
+        width: 30%;
+    }
+
+    .playlist__radio-wrapper-right {
+        width: 69%;
+    }
+
+    .playlist__form-desc-table {
+        margin-bottom: 8px;
+    }
+
+    .playlist__radio-wrapper {
+        margin-bottom: 27px;
+    }
+
+    .playlist__songs {
+        margin-top: 20px;
+    }
+
+    .playlist__item-wrapper {
+        width: 52%;
+    }
+
+    .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
+        width: 42%;
+    }
+
+    .playlist__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .playlist__container {
+        margin-top: 54px;
+        margin-bottom: 54px;
+    }
+
+    .playlist__title {
+        font-size: 24px;
+    }
+
+    .playlist__form-desc-table {
+        font-size: 12px;
+    }
+
+    .radio__form {
+        display: none;
+    }
+
+    .playlist__item {
+        flex-direction: column;
+        width: 44%;
+        height: 159px;
+    }
+
+    .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
+        width: 100%;
+        height: 113px;
+    }
+
+    .playlist__item-wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 46px;
+    }
+
+    .playlist__item-title {
+        font-size: 12px;
+    }
+
+    .playlist__item-desc {
+        font-size: 9px;
+    }
+
+    .playlist__desc, .playlist__span {
+        font-size: 12px;
+    }
+}
