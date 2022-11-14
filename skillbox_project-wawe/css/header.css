@@ -1,3 +1,7 @@
+.hidden {
+    display: none !important;
+}
+
 .header__primary-mobile, .header__primary-log-in-mobile {
     display: none;
 }
@@ -629,10 +633,6 @@
     }
 
     /** Эфир **/
-    .hidden {
-        display: none !important;
-    }
-
     .ether__mobile-desc {
         display: block;
         padding-top: 9px;
