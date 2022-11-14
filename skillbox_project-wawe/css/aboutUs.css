@@ -63,13 +63,19 @@
     margin-top: 23px;
 }
 
+.about__carousel-container {
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 .about__carousel-wrapper {
     display: flex;
 }
 
 .about__carousel-slide {
     margin-right: 30px;
-    width: 255px;
+    width: 255px ;
 }
 
 .carousel__slide-title {
@@ -90,19 +96,42 @@
     position: relative;
 }
 
+.carousel__btn-prev {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+    transform: translate(-37px, 113px);
+}
+
+.carousel__btn-next {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+    transform: translate(40px, 113px);
+}
+
 .carousel__btn-circle-prev::after {
     display: block;
     content: "";
     position: absolute;
     top: 107px;
     right: 32px;
-
     pointer-events: none;
 
     width: 38px;
     height: 38px;
     border: 2px solid #A1A6B4;
     border-radius: 50%;
+}
+
+.carousel__btn-circle-prev:hover:after {
+    border: 2px solid #6D31EE;
+}
+
+.carousel__btn-circle-next:hover:after {
+    border: 2px solid #6D31EE;
 }
 
 /** Это на актив **/
@@ -140,6 +169,16 @@
     border-bottom: 2px solid #A1A6B4;
 }
 
+.carousel__btn-wrapper-prev:hover:before,
+.carousel__btn-wrapper-prev:hover:after {
+    border-color: #6D31EE;
+}
+
+.carousel__btn-wrapper-next:hover:before,
+.carousel__btn-wrapper-next:hover:after {
+    border-color: #6D31EE;
+}
+
 .carousel__btn-circle-next::after {
     display: block;
     content: "";
@@ -170,6 +209,31 @@
     height: 11px;
     border-left: 2px solid #A1A6B4;
     border-bottom: 2px solid #A1A6B4;
+}
+
+.wrapper:hover .carousel__btn-circle-next::after {
+    border-color: #AA9DFA;
+}
+
+.wrapper:hover .carousel__btn-circle-next::before {
+    border-color: #AA9DFA;
+}
+
+.guests__item:hover .guests__item-wrapper::after {
+    border-color: #AA9DFA;
+}
+
+.guests__item:focus .guests__item-top {
+    color: var(--white);
+    background-color: #292E39;
+}
+
+.guests__item:focus .guests__item-circle::after {
+    border-color: #A1A6B4
+}
+
+.guests__item:focus .guests__item-wrapper::after {
+    border-color: #A1A6B4
 }
 
 /** Форма **/

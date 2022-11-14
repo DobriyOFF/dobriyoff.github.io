@@ -1,7 +1,3 @@
-.footer__footer-svg-mobile {
-    display: none;
-}
-
 .footer {
     background: #292E39;
     color: white;
@@ -108,6 +104,10 @@
     font-weight: 400;
     font-size: 16px;
     color: #A1A6B4;
+}
+
+.footer__footer-svg-mobile {
+    display: none;
 }
 
 @media(max-width: 1024px) {

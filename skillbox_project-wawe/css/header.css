@@ -233,6 +233,11 @@
         display: none;
     }
 
+    .header__nav-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .header__primary-container {
         padding-top: 21px;
         padding-bottom: 22px;
@@ -276,6 +281,101 @@
     }
 
     .header__qual {
+        display: none;
+    }
+
+    /** burger-modal **/
+    .burger__callback {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        background: #D2D5DD;
+    }
+
+    .burger__close {
+        margin-top: 28px;
+    }
+
+    .burger {
+        display: flex;
+        margin-top: 54px;
+        justify-content: space-between;
+    }
+
+    .burger__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 46%;
+        height: 20px;
+    }
+
+    .burger__item {
+        width: 95px;
+    }
+
+    .burger__item:not(:last-child) {
+        padding-bottom: 64px;
+    }
+
+    .burger-link  {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .burger-link:hover {
+        padding-bottom: 10px;
+        color: #6D31EE;
+        border-bottom: 1px solid #6D31EE;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .burger-link:focus {
+        padding-bottom: 0;
+        color: var(--white);
+        border: 0;
+        outline: 3px solid #AA9DFA;
+        background: #AA9DFA;
+    }
+
+    .burger-link:active {
+        color: #4F28A5;
+        background: transparent;
+        border-bottom: 1px solid #4F28A5;;
+    }
+
+    .burger__images-left {
+        margin-right: 30px;
+        transform: translateY(-26px);
+    }
+
+    .burger__images-right {
+        transform: rotate(180deg) translateY(110px);
+        /*transform: translateY(-26px);*/
+    }
+
+    .burger__overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 90;
+    }
+
+    .burger__callback {
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        z-index: 99;
+    }
+
+    .burger__add-list {
         display: none;
     }
 }
@@ -409,6 +509,11 @@
     .header__primary-mobile-btn-desc {
         transform: translateY(2px);
     }
+
+    /** burger **/
+    .burger__images-right {
+        display: none;
+    }
 }
 
 @media(max-width:450px) {
@@ -460,6 +565,105 @@
     .header__secondary-wrapper {
         padding-top: 11px;
         padding-bottom: 11px;
+    }
+
+    /** burger **/
+    .burger__close {
+        margin-top: 13px;
+    }
+
+    .burger {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .burger__images {
+        display: none;
+    }
+
+    .burger__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+
+    .burger__item {
+        width: 100%;
+    }
+
+    .burger__item:nth-child(2n) {
+        text-align: end;
+    }
+
+    .burger__item:not(:last-child) {
+        padding-bottom: 10px;
+    }
+
+    .burger__add-background {
+        padding-top: 30px;
+        background: #fff;
+    }
+
+    .burger__add-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .burger__add-link {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .burger__add-item {
+        padding-bottom: 30px;
+        width: 50%;
+    }
+
+    .burger__add-link {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    /** Эфир **/
+    .hidden {
+        display: none !important;
+    }
+
+    .ether__mobile-desc {
+        display: block;
+        padding-top: 9px;
+        border-top: 1px solid #E6E8EC;
+    }
+
+    .ether__mobile-list {
+        display: flex;
+    }
+
+    .ether__mobile-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ether__mobile-item:not(:last-child) {
+        border-right: 1px solid #D2D5DD;
+        padding-right: 37px;
+    }
+
+    .ether__mobile-item:not(:first-child) {
+        padding-left: 37px;
+    }
+
+    .header__ether-img {
+        justify-content: start;
+    }
+
+    .header__ether-wrapper {
+        padding-left: 0;
+        padding-top: 6px;
     }
 }
 

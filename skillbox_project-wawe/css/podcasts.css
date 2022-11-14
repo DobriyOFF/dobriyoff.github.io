@@ -27,6 +27,19 @@
     width: 49%;
 }
 
+.podcasts__item-hidden, .podcasts__btn-hidden {
+    display: none;
+}
+
+.podcasts__item-active {
+    display: flex;
+}
+
+.podcasts__item-img1, .podcasts__item-img2, .podcasts__item-img3, .podcasts__item-img4, .podcasts__item-img5, .podcasts__item-img6, .podcasts__item-img7, .podcasts__item-img8 {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .podcasts__item-img1 {
     position: relative;
     background-image: url("../img/podcasts/card_1.jpg");

@@ -85,22 +85,22 @@
 }
 
 /** Это на актив **/
-/*.guests__item-wrapper::before,*/
-/*.guests__item-wrapper::after {*/
-/*    display: block;*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 42px;*/
-/*    right: 17px;*/
-/*    transform: rotate(135deg);*/
+.guests__item-wrapper-active::before,
+.guests__item-wrapper-active::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: 17px;
+    transform: rotate(135deg);
 
-/*    pointer-events: none;*/
+    pointer-events: none;
 
-/*    width: 11px;*/
-/*    height: 11px;*/
-/*    border-left: 2px solid #A1A6B4;*/
-/*    border-bottom: 2px solid #A1A6B4;*/
-/*}*/
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid #A1A6B4;
+    border-bottom: 2px solid #A1A6B4;
+}
 
 .guests__item-wrapper::before,
 .guests__item-wrapper::after {
@@ -142,6 +142,8 @@
     margin-top: 13px;
     margin-bottom: 30px;
     flex-wrap: wrap;
+
+
 }
 
 .guests__bottom-item {
@@ -151,17 +153,24 @@
     width: 25%
 }
 
+.gusts__bottom-link:hover {
+    color: #AA9DFA;
+}
+
 .gusts__bottom-link {
     color: var(--white);
 }
 
 .deactive {
     display: none;
+    transition: 0.55s opacity, 0.55s visibility;
 }
 
 .active {
     border-top: 1px solid #AA9DFA;
     border-bottom: 1px solid #AA9DFA;
+    transition: 0.55s opacity, 0.55s visibility;
+
 }
 
 .active-author {
@@ -344,9 +353,6 @@
 
     .guests__bottom-item {
         font-size: 14px;
-    }
-
-    .guests__bottom-item {
         width: 43%;
     }
 
