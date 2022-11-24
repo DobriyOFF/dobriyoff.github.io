@@ -33,6 +33,16 @@
   }
 }
 
+@media(max-width:650px) {
+  .recipient__form-input {
+    width: 100%;
+  }
+
+  .recipient__input-medium {
+    width: 27%;
+  }
+}
+
 
 @media(max-width: 420px) {
   .container__mobile {
