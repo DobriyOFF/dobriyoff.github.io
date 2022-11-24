@@ -1,0 +1,24 @@
+.product__features-like:hover path,
+.seller__info:hover path {
+    fill: #6725A8;
+}
+
+.product__features-basket:hover path {
+    fill: #F55123;
+}
+
+.seller__info:hover circle {
+    stroke: #6725A8;
+}
+
+.total__order-btn:hover {
+    background-color: #6725A8;
+}
+
+.delivery__method-btn:hover {
+    color: #6725A8;
+}
+
+.footer__btn:active path {
+    fill: #CB11AB;
+}
