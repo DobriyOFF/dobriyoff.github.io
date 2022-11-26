@@ -1,3 +1,7 @@
+.disable {
+  display: none;
+}
+
 .product__priceMobile, .product__img-size {
   display: none;
 }
@@ -91,6 +95,7 @@
 /** Конец кастомного чекбокса **/
 
 .basket__header-title {
+  margin-right: auto;
   font-weight: 400;
   font-size: 16px;
 }
@@ -98,7 +103,12 @@
 /** Кнопка Выбрать все **/
 .basket__btn {
   position: relative;
-  margin-left: auto;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .basket__btn::before,
@@ -106,8 +116,8 @@
   display: block;
   content: "";
   position: absolute;
-  top: 9px;
-  left: 0px;
+  top: 10px;
+  left: 0;
   transform: rotate(-225deg);
 
   pointer-events: none;
@@ -126,6 +136,11 @@
   cursor: pointer;
 }
 
+.active::before,
+.active::after {
+  top: 0px;
+  transform: rotate(315deg);
+}
 /** Конец кнопки **/
 
 .basket__title {
@@ -320,11 +335,13 @@
 
 .missing__basket {
   display: flex;
+  margin-top: 10px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .missing__basket-title {
+  margin-right: auto;
   font-weight: 600;
   font-size: 16px;
 }

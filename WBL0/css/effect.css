@@ -7,6 +7,11 @@
     fill: #F55123;
 }
 
+.deliver__label-svg:hover path {
+    fill: #F55123;
+}
+
+
 .seller__info:hover circle {
     stroke: #6725A8;
 }
@@ -22,3 +27,4 @@
 .footer__btn:active path {
     fill: #CB11AB;
 }
+

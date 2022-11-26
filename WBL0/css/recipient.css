@@ -25,6 +25,7 @@
 
 .recipient__form-input {
   padding-bottom: 4px;
+  width: 100%;
   font-size: 16px;
   height: 40px;
   border: none;
@@ -52,4 +53,11 @@
 .recipient__hints-desc {
   margin-top: 5px;
   font-size: 12px;
+}
+
+.recipient__hints-error {
+  display: none;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #F55123;
 }

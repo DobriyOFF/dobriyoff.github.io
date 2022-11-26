@@ -19,7 +19,7 @@
   font-size: 24px;
 }
 
-.delivery__method-btn {
+.delivery__method-btn, .paymet__method-btn {
   margin-left: auto;
   font-weight: 700;
   font-size: 16px;
