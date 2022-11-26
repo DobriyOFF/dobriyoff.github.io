@@ -1,0 +1,45 @@
+.payment {
+  margin-top: 16px;
+}
+
+.payment__container {
+  padding: 16px 24px;
+  width: 60%;
+  border-radius: 16px;
+  background: var(--white);
+}
+
+/* Способ оплаты */
+.payment__method {
+  display: flex;
+}
+
+.payment__method-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.payment__card {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.payment__card-svg {
+  padding-right: 8px;
+}
+
+.payment__card-number {
+  padding-right: 12px;
+}
+
+.payment__card-number, .payment__card-month {
+  font-size: 16px;
+}
+
+.payment__card-info {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #A0A0A4;
+}

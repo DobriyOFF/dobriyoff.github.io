@@ -1,0 +1,55 @@
+.recipient {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.recipient__container {
+  padding: 16px 24px;
+  width: 60%;
+  border-radius: 16px;
+  background: var(--white);
+}
+
+/* Получатель форма */
+.recipient-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.recipient__form {
+  display: flex;
+  margin-top: 34px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipient__form-input {
+  padding-bottom: 4px;
+  font-size: 16px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: #A0A0A4;
+}
+
+.recipient__input-large {
+  margin-bottom: 27px;
+  padding-right: 24px;
+  width: 45%;
+}
+
+.recipient__input-medium {
+  width: 30%;
+}
+
+.recipient__hints-tel {
+  transform: translateY(-55px);
+  font-size: 13px;
+  color: #A0A0A4;
+}
+
+.recipient__hints-desc {
+  margin-top: 5px;
+  font-size: 12px;
+}

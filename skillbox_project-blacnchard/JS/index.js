@@ -396,8 +396,8 @@ editionsCategoriesHeader.addEventListener('click', () => {
 // Проекты
 
 const projectsSwiper = new Swiper('.projects-bottom-container', {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 5,
+  spaceBetween: 30,
 
   slideClass: 'projects-bottom-slide',
   wrapperClass: 'projects-bottom-wrapper',
