@@ -6,6 +6,14 @@
   display: none;
 }
 
+.product__wrapper {
+  display: flex;
+}
+
+.product__price-title {
+  margin-right: 10px;
+}
+
 .main {
   padding-top: 20px;
   background: #F6F6FA;
