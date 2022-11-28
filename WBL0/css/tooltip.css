@@ -1,12 +1,19 @@
 .tooltip__delivery-info {
   display: none;
-  margin-top: 5px;
+  position: absolute;
+  width: 29%;
+  transform: translate(-20px, 0);
   padding: 10px 16px 14px;
   font-size: 13px;
   line-height: 16px;
   background-color: var(--white);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
+}
+
+.tooltip__delivery-info-mobile {
+  width: 15%;
+  transform: translate(250px, 0);
 }
 
 .tooltip__manufacturer {

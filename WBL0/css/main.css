@@ -453,6 +453,7 @@
 .total__delivery-btn {
   margin-left: auto;
   border: none;
+  cursor: pointer;
   background: transparent;
 }
 

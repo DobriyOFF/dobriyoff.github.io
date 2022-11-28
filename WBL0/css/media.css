@@ -1,3 +1,27 @@
+@media(max-width: 1600px) {
+  .tooltip__delivery-info {
+    width: 31%;
+    transform: translate(-20px, 0);
+  }
+
+  .tooltip__delivery-info-mobile {
+    width: 15%;
+    transform: translate(250px, 0);
+  }
+}
+
+@media(max-width: 1400px) {
+  .tooltip__delivery-info {
+    width: 33%;
+    transform: translate(-20px, 0);
+  }
+
+  .tooltip__delivery-info-mobile {
+    width: 300px;
+    transform: translate(250px, 0);
+  }
+}
+
 @media(max-width:1200px) {
   .basket__total {
     width: 310px;
@@ -13,6 +37,16 @@
 
   .delivery__container, .payment__container, .recipient__container {
     width: 65%;
+  }
+
+  .tooltip__delivery-info {
+    width: 300px;
+    transform: translate(-20px, 0);
+  }
+
+  .tooltip__delivery-info-mobile {
+    width: 200px;
+    transform: translate(270px, 0);
   }
 }
 @media(max-width:1000px) {
@@ -31,6 +65,11 @@
   .delivery__container, .payment__container, .recipient__container {
     width: 100%;
   }
+
+  .tooltip__delivery-info-mobile {
+    width: 200px;
+    transform: translate(270px, 0);
+  }
 }
 
 @media(max-width:650px) {
@@ -41,8 +80,19 @@
   .recipient__input-medium {
     width: 27%;
   }
+
+  .tooltip__delivery-info-mobile {
+    width: 35%;
+    transform: translate(250px, 0);
+  }
 }
 
+@media(max-width: 500px) {
+  .tooltip__delivery-info-mobile {
+    width: 70%;
+    transform: translate(0px, 0);
+  }
+}
 
 @media(max-width: 420px) {
   .container__mobile {

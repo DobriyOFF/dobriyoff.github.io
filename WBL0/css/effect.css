@@ -20,11 +20,20 @@
     background-color: #6725A8;
 }
 
-.delivery__method-btn:hover {
+.delivery__method-btn:hover, .paymet__method-btn:hover {
     color: #6725A8;
 }
 
 .footer__btn:active path {
     fill: #CB11AB;
+}
+
+.total__delivery-btn:hover path {
+    fill: #6725A8;
+}
+
+.header__ui-profile:hover, .header__ui-basket:hover {
+    color: white;
+    border-bottom: 1px solid white;
 }
 
