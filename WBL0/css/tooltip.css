@@ -48,16 +48,18 @@
 .tooltip__price {
   display: none;
   position: absolute;
+  width: 310px;
   z-index: 100;
   padding: 10px 16px 10px;
-  transform: translateY(50px);
+  transform: translate(-100px, 50px);
   flex-direction: column;
   background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.3);
 }
 
-.price__discount-title, .price__discount-title {
+.price__discount-title {
+  width: 60%;
   font-weight: 400;
   font-size: 13px;
   color: #A0A0A4;
@@ -75,4 +77,12 @@
 
 .price__discount:not(:first-child) {
   margin-top: 8px;
+}
+
+.price__discount-wrapper {
+  display: flex;
+}
+
+.price__discount-desc:not(:last-child) {
+  margin-right: 4px;
 }

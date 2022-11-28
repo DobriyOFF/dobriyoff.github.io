@@ -8,6 +8,10 @@
     width: 15%;
     transform: translate(250px, 0);
   }
+
+  .tooltip__price {
+    width: 262px;
+  }
 }
 
 @media(max-width: 1400px) {
@@ -20,6 +24,8 @@
     width: 300px;
     transform: translate(250px, 0);
   }
+
+
 }
 
 @media(max-width:1200px) {
@@ -48,6 +54,14 @@
     width: 200px;
     transform: translate(270px, 0);
   }
+
+  .tooltip__price {
+    width: 244px;
+  }
+
+  .price__discount-title {
+    width: 50px;
+  }
 }
 @media(max-width:1000px) {
   .basket__total {
@@ -70,6 +84,14 @@
     width: 200px;
     transform: translate(270px, 0);
   }
+
+  .tooltip__price {
+    width: 31%;
+  }
+
+  .price__discount-title {
+    width: 60%;
+  }
 }
 
 @media(max-width:650px) {
@@ -84,6 +106,10 @@
   .tooltip__delivery-info-mobile {
     width: 35%;
     transform: translate(250px, 0);
+  }
+
+  .price__discount-title {
+    width: 40%;
   }
 }
 

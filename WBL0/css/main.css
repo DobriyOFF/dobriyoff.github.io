@@ -8,10 +8,7 @@
 
 .product__wrapper {
   display: flex;
-}
-
-.product__price-title {
-  margin-right: 10px;
+  flex-wrap: wrap;
 }
 
 .main {
@@ -319,7 +316,9 @@
 }
 
 .product__price-title {
+  margin-right: 0;
   margin-left: auto;
+  padding: 0 4px 0 0;
   font-weight: 700;
   font-size: 20px;
 }
@@ -333,12 +332,18 @@
   font-size: 16px;
 }
 
-.product__price-desc {
+.product__discount {
+  display: flex;
   margin-left: auto;
+
   font-weight: 400;
   font-size: 13px;
   color: #A0A0A4;
   text-decoration: line-through;
+}
+
+.product__price-desc {
+  padding: 0 4px 0 0;
 }
 
 .missing__basket {
