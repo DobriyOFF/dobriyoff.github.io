@@ -305,7 +305,8 @@
     margin-right: auto;
     margin-left: 2px;
     background-color: white;
-    transform: translate(2px, 26px)
+    transform: translate(2px, 26px);
+    margin-top: 0;
   }
 
   .item__product {
