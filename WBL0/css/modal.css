@@ -20,7 +20,7 @@
   display: none;
   position: fixed;
   left: 50%;
-  margin-top: 100px;
+  top: 200px;
   transform: translate(-50%);
   width: 45%;
   max-width: 100%;
@@ -241,12 +241,16 @@
 .delivery__modal-btn {
   margin-left: auto;
   width: 20px;
-  width: 20px;
   border: none;
   background: transparent;
 }
 
-
+.delivery__wrapper-error {
+  display: none;
+  margin-top: 8px;
+  color: #F55123;
+  font-size: 16px;
+}
 
 /** Запросы **/
 @media (max-width: 1600px) {
