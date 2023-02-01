@@ -197,6 +197,14 @@
 
 
 @media(max-width: 420px) {
+  .tooltip__delivery-info-mobile {
+    width: 200px;
+    transform: translate(0px, 0);
+  }
+  .tooltip__delivery-info {
+    width: 300px;
+    transform: translate(0px, 50px);
+  }
   .container__mobile {
     padding: 0;
   }
