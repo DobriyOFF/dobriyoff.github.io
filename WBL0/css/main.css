@@ -54,6 +54,7 @@
   border: 1px solid #adb5bd;
   border-radius: 0.25em;
   margin-right: 0;
+  margin-top: 39px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -428,6 +429,10 @@
   border-radius: 16px;
 }
 
+.price__discount-wrapper {
+  display: flex;
+}
+
 .total-head {
   display: flex;
   margin-bottom: 7px;
@@ -623,6 +628,12 @@
 
 .basket__header-dop + label::before {
   margin-right: 11px;
+}
+
+.basket__header-dop:checked+label::before {
+  border-color: #CB11AB;
+  background-color: #CB11AB;
+  background-image: url(../img/main/pointer.svg);
 }
 
 .item__product-missing {

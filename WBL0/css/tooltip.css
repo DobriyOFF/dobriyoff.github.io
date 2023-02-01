@@ -59,6 +59,7 @@
 .price__discount-desc {
   font-weight: 400;
   font-size: 13px;
+  margin-right: 4px;
 }
 
 .price__discount {
