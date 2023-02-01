@@ -87,6 +87,12 @@
   background-size: 50% 50%;
 }
 
+.basket__header-checkbox:checked + label::before {
+  background-color: rgb(203, 17, 171);
+  background-image: url(../img/main/pointer.svg);
+  border-color: rgb(203, 17, 171);
+}
+
 /** Конец кастомного чекбокса **/
 
 .basket__header-title {
