@@ -3,8 +3,8 @@
 }
 
 .delivery__container {
-  padding: 16px 24px;
-  width: 60%;
+  padding: 17px 22px;
+  width: 66%;
   border-radius: 16px;
   background: var(--white);
 }
@@ -21,6 +21,7 @@
 
 .delivery__method-btn, .paymet__method-btn {
   margin-left: auto;
+  padding: 9px 3px 0 0;
   font-weight: 700;
   font-size: 16px;
   border: none;
@@ -31,15 +32,17 @@
 
 /* Общие параметры */
 .details__point-title, .details__cost-title, .delivery-terms__item-title {
-  width: 40%;
-  height: 44px;
+  width: 22%;
   font-weight: 600;
   font-size: 16px;
 }
-
 /* Пункт выдачи */
 .delivery__details {
-  margin-top: 16px;
+  margin-top: 23px;
+}
+
+.start__dop {
+  padding-left: 6px;
 }
 
 .details__point {
@@ -53,10 +56,10 @@
 
 .details__point-desc {
   font-size: 16px;
-  line-height: 24px;
 }
 
 .details__point-working {
+  padding-top: 4px;
   font-size: 13px;
   line-height: 16px;
 }
@@ -64,7 +67,7 @@
 /* Стоимсть доставки */
 .details__cost {
   display: flex;
-  margin-top: 16px;
+  margin-top: 19px;
 }
 
 .details__cost-title {
@@ -81,7 +84,11 @@
 .delivery-terms__item {
   display: flex;
   flex-wrap: wrap;
-  height: 75px;
+  height: 73px;
+}
+
+.delivery-terms__item:not(:last-child) {
+  margin-top: 20px;
 }
 
 .terms__card-list {
@@ -89,7 +96,7 @@
 }
 
 .terms__card-item {
-  padding-right: 12px;
+  padding-right: 8px;
 }
 
 .terms__card-img {
@@ -106,7 +113,7 @@
 .terms__card-col {
   position: absolute;
   padding: 1px 4px;
-  transform: translate(-13px, -5px);
+  transform: translate(-20px, -8px);
   font-weight: 600;
   font-size: 10px;
   background: #F55123;
@@ -114,14 +121,20 @@
   color: var(--white);
 }
 
+.terms__card-col-small {
+  transform: translate(-10px, -8px);
+}
+
 /* Доставка - бесплатно */
 .info__agree-svg {
   transform: translateY(5px);
+  padding-right: 29px;
 }
 
 .details__point-info {
   font-size: 13px;
   line-height: 16px;
+  padding-bottom: 10px;
 }
 
 .info__free {

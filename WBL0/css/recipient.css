@@ -1,11 +1,11 @@
 .recipient {
-  margin-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 20px;
+  padding-bottom: 22px;
 }
 
 .recipient__container {
   padding: 16px 24px;
-  width: 60%;
+  width: 66%;
   border-radius: 16px;
   background: var(--white);
 }
@@ -18,16 +18,15 @@
 
 .recipient__form {
   display: flex;
-  margin-top: 34px;
+  margin-top: 30px;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .recipient__form-input {
-  padding-bottom: 4px;
+  padding-bottom: 0px;
   width: 100%;
   font-size: 16px;
-  height: 40px;
+  height: 33px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background: transparent;
@@ -35,17 +34,18 @@
 }
 
 .recipient__input-large {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   padding-right: 24px;
-  width: 45%;
+  width: 42.6%;
 }
 
 .recipient__input-medium {
-  width: 30%;
+  width: 26%;
+  margin-right: 21px;
 }
 
 .recipient__hints-tel {
-  transform: translateY(-55px);
+  transform: translateY(-43px);
   font-size: 13px;
   color: #A0A0A4;
 }

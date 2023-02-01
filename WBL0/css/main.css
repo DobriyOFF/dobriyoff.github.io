@@ -7,7 +7,7 @@
 }
 
 .main {
-  padding-top: 20px;
+  padding-top: 25px;
   background: #F6F6FA;
   border-radius: 24px;
 }
@@ -22,12 +22,12 @@
 }
 
 .basket__basket {
-  width: 60%;
+  width: 65.9%;
 }
 
 .basket__header {
   display: flex;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 15px;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -42,7 +42,6 @@
 
 .basket__label-checkbox + label {
   display: inline-flex;
-  align-items: center;
   user-select: none;
 }
 .basket__label-checkbox + label::before {
@@ -54,13 +53,14 @@
   flex-grow: 0;
   border: 1px solid #adb5bd;
   border-radius: 0.25em;
-  margin-right: 0.5em;
+  margin-right: 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
 }
 
 .basket__label-checkbox:checked+label::before {
+  margin-top: 37px;
   border-color: #CB11AB;
   background-color: #CB11AB;
   background-image: url("../img/main/pointer.svg");
@@ -80,22 +80,17 @@
   flex-grow: 0;
   border: 1px solid #adb5bd;
   border-radius: 0.25em;
-  margin-right: 0.5em;
+  margin-right: 8px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
-}
-
-.basket__header-checkbox:checked+label::before {
-  border-color: #CB11AB;
-  background-color: #CB11AB;
-  background-image: url("../img/main/pointer.svg");
 }
 
 /** Конец кастомного чекбокса **/
 
 .basket__header-title {
   margin-right: auto;
+  padding-bottom: 3px;
   font-weight: 400;
   font-size: 16px;
 }
@@ -104,8 +99,8 @@
 .basket__btn {
   position: relative;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 23px;
   border: 0;
   background-color: transparent;
   cursor: pointer;
@@ -144,14 +139,19 @@
 /** Конец кнопки **/
 
 .basket__title {
+  padding-top: 14px;
   font-weight: 700;
   font-size: 28px;
 }
 
 .basket__list {
   display: flex;
-  padding-top: 20px;
+  padding-top: 13px;
   flex-direction: column;
+}
+
+.basket__item:not(:first-child) {
+  padding-top: 11px;
 }
 
 .basket__label {
@@ -166,7 +166,6 @@
 
 .item__product {
   display: flex;
-  justify-content: space-between;
   padding-left: 12px;
   width: 98%;
 }
@@ -178,7 +177,42 @@
 
 .product__desc {
   padding-left: 16px;
-  width: 65%;
+  width: 30.9%;
+}
+
+.product__price {
+  display: flex;
+  width: 12%;
+  flex-direction: column;
+}
+
+.product__discount {
+  display: flex;
+  margin-left: auto;
+}
+
+.product__price-title {
+  margin-right: 0;
+  margin-left: auto;
+  padding: 0 4px 0 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.product__price-special {
+  font-size: 16px;
+}
+
+.product__price-desc {
+  padding: 0 4px 0 0;
+}
+
+.product__wrapper {
+  display: flex;
+}
+
+.product__wrapper {
+  display: flex;
 }
 
 .item__product-title {
@@ -192,26 +226,32 @@
   padding-top: 8px;
 }
 
+.product__func-spec {
+  display: none;
+}
+
 .product__func-color {
-  padding-right: 16px;
+  padding-right: 17 px;
   font-weight: 400;
   font-size: 13px;
 }
 
 .product__func-size {
+  padding-left: 17px;
   font-weight: 400;
   font-size: 13px;
 }
 
 .item__product-wb {
-  padding-top: 8px;
+  padding-top: 9px;
   font-weight: 400;
   font-size: 13px;
   color: #A0A0A4;
 }
 
 .item__product-seller {
-  padding-top: 3px;
+  padding-top: 0px;
+  transform: translateY(-3px);
   font-weight: 400;
   font-size: 13px;
   color: #A0A0A4;
@@ -219,7 +259,7 @@
 
 .seller__info {
   padding: 0;
-  width: 19px;
+  width: 25px;
   height: 19px;
   cursor: pointer;
   border: none;
@@ -231,8 +271,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-left: 27px;
-  width: 28%;
+  padding-left: 34.2%;
 }
 
 .product__number {
@@ -301,41 +340,55 @@
 }
 
 .product__features-like, .product__features-basket {
+  padding: 0;
   border: none;
+}
+
+.product__features-like {
+  padding-right: 18px;
+  padding-top: 2px;
+}
+
+.product__features-basket {
+  padding-right: 1px;
 }
 
 .product__price {
   display: flex;
-  width: 30%;
   flex-direction: column;
+  margin-left: auto;
 }
 
 .product__price-title {
   margin-left: auto;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .product__price-special {
-  font-size: 16px;
+  padding-top: 3px;
+  font-size: 15px;
 }
 
 .price__currency {
+  margin-top: 3px;
   font-weight: 700;
   font-size: 16px;
 }
 
 .product__price-desc {
+  padding-top: 8px;
   margin-left: auto;
   font-weight: 400;
   font-size: 13px;
   color: #A0A0A4;
   text-decoration: line-through;
+  border-bottom: 1px dashed #A0A0A4;
 }
 
 .missing__basket {
   display: flex;
-  margin-top: 10px;
+  margin-top: 18px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -347,7 +400,7 @@
 }
 
 .missing__item:not(:first-child) {
-  padding-top: 30px;
+  padding-top: 32px;
 }
 
 .missing__item-img {
@@ -367,9 +420,9 @@
   display: flex;
   margin-left: auto;
   flex-direction: column;
-  padding: 16px 24px;
-  width: 35%;
-  height: 604px;
+  padding: 18px 24px;
+  width: 31.7%;
+  height: 572px;
   background: #FFFFFF;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
@@ -377,7 +430,7 @@
 
 .total-head {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   width: 100%;
   height: 33px;
 }
@@ -394,9 +447,8 @@
 }
 
 .basket__total-currency {
-  padding-left: 5px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .total__list {
@@ -430,7 +482,7 @@
 .total__delivery {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
+  margin-top: 23px;
 }
 
 .delivery__head {
@@ -443,6 +495,7 @@
 }
 
 .total__delivery-btn {
+  padding: 0;
   margin-left: auto;
   border: none;
   background: transparent;
@@ -471,7 +524,7 @@
 }
 
 .delivery__info-desc {
-  padding-left: 8px;
+  padding-left: 10px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -480,7 +533,7 @@
 /* Оплата картой */
 .total__payment {
   display: flex;
-  margin-top: 24px;
+  margin-top: 27px;
   flex-direction: column;
 }
 
@@ -494,11 +547,12 @@
 }
 
 .payment__card-user {
+  padding-left: 8px;
   font-size: 13px;
 }
 
 .payment__permanent {
-  margin-top: 12px;
+  margin-top: 4px;
   padding: 8px 8px 12px;
   background: #F6F6FA;
   border-radius: 8px;
@@ -506,7 +560,7 @@
 
 .payment__permanent-label {
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
   font-weight: 400;
   font-size: 13px;
   border: none;
@@ -546,14 +600,43 @@
 
 
 .total__order-checkbox + label::before {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-size: 80% 80%;
+  transform: translateY(-3px);
 }
 
 .total__order-checkbox:checked+label::before {
   border-color: transparent;
   background-color: transparent;
   background-image: url("../img/main/agree.svg");
+}
+
+.total__order-checkbox + label::before {
+  margin-right: 0;
+}
+
+.total__order-dop {
+  transform: translate(-10px, 0px);
+}
+
+.basket__header-dop + label::before {
+  margin-right: 11px;
+}
+
+.item__product-missing {
+  padding-left: 0;
+}
+
+.product__user-missing {
+  padding-left: 36%;
+}
+
+.product__features-missing {
+  padding: 0;
+}
+
+.product__desc-missing {
+  width: 37%;
 }
