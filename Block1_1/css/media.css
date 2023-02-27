@@ -1,0 +1,30 @@
+@media(max-width: 450px) {
+  .main__img {
+    display: none;
+  }
+
+  .main {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .main__auth {
+    width: auto;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main__logo-mobile {
+    display: inline-block;
+  }
+
+  .main__logo-mobile > path {
+    fill: #3698FB;
+  }
+
+  .form__btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
