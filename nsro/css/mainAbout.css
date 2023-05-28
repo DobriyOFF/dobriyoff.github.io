@@ -296,6 +296,11 @@ p   {
 
   .accordion__header:hover {
     background-color: #4682B4;
+    
+  }
+
+  .accordion__header:hover .acc__btn-desc {
+    color: white;
   }
 
   .accordion__item:not(.accordion__item_show) .accordion__header {
@@ -343,4 +348,12 @@ h4 {
     font-size: 21px;
     line-height: 30px;
     color: #222d35;
+}
+
+.header__contact {
+    width: auto;
+}
+
+.header__container {
+    background: #4682B4;
 }

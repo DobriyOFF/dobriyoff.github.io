@@ -140,6 +140,10 @@
   .info {
     margin-left: 0;
   }
+  
+  .header__container {
+    background: #4682B4;
+  }
 
 }
 
@@ -176,6 +180,19 @@
 
   iframe {
     width: 100%;
+  }
+
+  .header__contact-mail {
+    display: none;
+  }
+
+  .header__contact-add {
+    display: none;
+  }
+
+  .header__contact-tel {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

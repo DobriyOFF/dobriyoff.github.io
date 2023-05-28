@@ -81,7 +81,65 @@ a:hover {
     opacity: 1;
   }
 
+  .form__btn:hover, .apply__btn:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
 
+  /* .aside__item:hover {
+    border-left: 4px solid #4682B4;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  } */
+
+  .left-inOutSpread:before{
+    border-color: #6682B4;
+    transition-timing-function: ease-out;
+  }
+
+  .aside__item:hover .arrow-2-top {
+    transition-duration: 0.3s;
+    background-color: #9682C1;
+    transition-timing-function: ease-out;
+  }
+
+  .aside__item:hover .arrow-2-bottom {
+    transition-duration: 0.3s;
+    background-color: #9682B4;
+    transition-timing-function: ease-out;
+  }
+
+  .aside__item:hover .aside__link {
+    transition-duration: 0.3s;
+    color: #4682B4;
+    transition-timing-function: ease-out;
+  }
+
+  .aside__item {
+    cursor: pointer;
+  }
+
+  .left-aside__item {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222d35;
+  }
+
+  .menu__list {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  .header__top-logo {
+    cursor: pointer;
+  }
+
+  /* .carousel__item:hover {
+
+  } */
 
 /* .main {
     opacity: 0;
