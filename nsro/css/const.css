@@ -1,0 +1,52 @@
+.list {
+    margin-left: 10px;
+    list-style: disc; /* Квадрат в качестве маркера */
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    color: #555c63;
+}
+
+.acc__btn-desc {
+    margin-top: 0;
+}
+
+.aside {
+    width: 40%;
+}
+
+.info {
+    width: 100%;
+}
+
+.accordion__body {
+    padding: 20px;
+}
+
+
+.pretitle__blue {
+    margin-top: 10px;
+    color: #4682B4;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.title {
+    margin-top: 10px;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 40px;
+    line-height: 50px;
+    color: #222d35;
+}

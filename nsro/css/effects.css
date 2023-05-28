@@ -1,0 +1,94 @@
+.header__btns-btn:hover {
+    background-color: black;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.qual__btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    color: #4682B4;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.tippy-box {
+    background-color: #4682B4;
+    color: white;
+}
+
+.tippy-arrow {
+    color: #4682B4;
+}
+
+.tippy-tooltip.blue-theme {
+    background-color: #4682B4;
+    color: white;
+}
+  
+  .info__item-btn {
+    position: relative;
+    text-align: left;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .info__item-btn::before {
+    content: 'ПОДРОБНЕЕ';
+    padding: 10px 35px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #4682B4;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
+    transition: opacity .2s ease, -webkit-transform .2s ease;
+    -o-transition: opacity .2s ease, transform .2s ease;
+    transition: opacity .2s ease, transform .2s ease;
+    transition: opacity .2s ease, transform .2s ease, -webkit-transform .2s ease;
+  }
+  
+  .info__item-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(41, 46, 57, 0.8);
+    opacity: 0;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+  }
+  .info__item-btn:focus-visible::after,
+  .info__item-btn:focus-visible::before,
+  .info__item-btn:hover::after,
+  .info__item-btn:hover::before  {
+    opacity: 1;
+  }
+
+
+
+/* .main {
+    opacity: 0;
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+  } */

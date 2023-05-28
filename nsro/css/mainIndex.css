@@ -1,0 +1,159 @@
+.main__container {
+    margin-top: 100px;
+    border: 1px solid #eee;
+}
+
+.info__list {
+    display: flex;
+}
+
+.info__item-btn {
+    background: transparent;
+    border: none;
+}
+
+.info__item {
+    display: flex;
+    padding: 35px 5px 35px 40px;
+    width: 25%;
+    flex-direction: column;
+    
+}
+
+.info__item:not(:last-child) {
+    border-right: 1px solid #eee;
+}
+
+.info__item-ico {
+    font-size: 45px;
+    color: #4682B4;
+}
+
+.info__item-title {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.info__item-desc {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.qual {
+    margin-top: 80px;
+}
+
+.qual__container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.qual__pretitle {
+    color: #4682B4;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.qual__title {
+    margin-top: 10px;
+    color: #555c63;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.qual__desc {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.qual__list {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.qual__item {
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 49%;
+    align-items: center;
+}
+
+.qual__item:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #eee;
+    width: 1px;
+    height: 64%;
+    top: 18%;
+    left: -9px;
+}
+
+.qual__item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #eee;
+    width: 1px;
+    width: 96%;
+    bottom: 0;
+}
+
+.qual__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #eee;
+    width: 1px;
+    width: 100%;
+    bottom: 0;
+    right: -2px;
+}
+
+.qual__item-desc {
+    padding-left: 26px;
+    color: #222d35;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.qual__item-ico {
+    padding-left: 5px;
+    color: #4682B4;
+}
+
+.qual__btn {
+    margin-top: 23px;
+    padding: 17px 35px;
+    background-color: #4682B4;
+    font-size: 14px;
+}
+
+.qual__wrapper {
+    display: flex;
+    margin-top: 39px;
+    justify-content: space-between;
+}
+
+.qual__wrapper-img {
+    width: 30%;
+    aspect-ratio: auto 350 / 400;
+}
+
+.carousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f8f8f8;
+}
+

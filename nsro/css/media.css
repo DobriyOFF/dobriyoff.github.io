@@ -1,0 +1,244 @@
+@media screen and (max-width: 1300px) {
+    .qual__container {
+        width: 100%;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 20px;
+        left: 20px;
+      
+        width: 26px;
+        height: 26px;
+      
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+      
+        width: 100%;
+        height: 2px;
+      
+        background-color: #616161;
+      
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+
+      .menu__list {
+        padding: 10px 15px;
+        transform: translateY(-5px);
+        flex-direction: column;
+      }
+
+      .menu__item {
+        padding: 15px 0;
+      }
+
+      .menu__item:not(:last-child) {
+        border-bottom: 1px solid rgba( 85,92,99,0.15);
+      }
+
+      .menu__item-link {
+        color: rgba( 85,92,99,1);
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .active {
+        display: flex;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 100px;
+      }
+
+      .header__bottom {
+        padding-top: 150px;
+      }
+
+      .header__bottom-desc {
+        font-size: 50px;
+      }
+
+      .footer__left {
+        width: 100%;
+      }
+
+      .footer__right {
+        margin-right: auto;
+      }
+
+      .header__top {
+        margin-left: 0;
+        margin-right: 0;
+        opacity: .89;
+        width: 100%;
+      }
+      
+      .header__container {
+        padding: 0;
+      }
+
+      .slider {
+        display: none;
+      }
+  }
+
+@media screen and (max-width: 1200px) {
+  .aside {
+    width: 100%;
+  }
+  .main__container {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+    .footer__center {
+        display: none;
+    }       
+    .info__contact-title {
+      font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .footer__center {
+      display: none;
+  }       
+  .info {
+    flex-direction: column;
+  }
+
+  .form__btn {
+    width: 100%;
+    height: 50px;
+  }
+
+  .info__contact {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .info__contact-pretitle, .info__contact-title, .info__contact-add {
+    text-align: center;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .flex {
+        flex-direction: column;
+    }       
+}
+
+@media screen and (max-width: 600px) {
+    .header__bottom {
+        padding-top: 100px;
+    }    
+
+    .header__bottom-desc {
+        font-size: 30px;
+    }
+
+    .contact__container {
+      margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__btns {
+        flex-direction: column;
+    }
+
+    .header__btns-btn:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .form__title, .info__contact-title {
+      font-size: 20px;
+    }
+
+    .form__desc, .info__contact-pretitle {
+      font-size: 11px;
+    }
+
+    .info__add {
+      margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header__bottom-desc {
+        line-height: 50px;
+    }
+
+    .qual__item-desc {
+        padding-left: 10px;
+    }
+
+    .qual {
+        margin-top: 30px;
+    }
+
+    .main__container {
+        margin-top: 30px;
+    }
+
+    .qual__title {
+        font-size: 30px;
+    }
+}

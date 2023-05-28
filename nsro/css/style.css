@@ -1,0 +1,169 @@
+:root {
+  --black: #222d35;
+  --white: #FFFFFF;
+}
+
+body {
+  min-width  : 320px;
+  font-size  : 16px;
+  font-weight: 400;
+  color      : var(--black);
+  font-family: 'Rubik', 'Segoe UI','Frutiger','Frutiger Linotype','Dejavu Sans','Helvetica Neue','Arial','sans-serif';
+}
+
+* {
+  box-sizing: border-box
+}
+
+a {
+  text-decoration: none;
+  color          : var(--black);
+}
+
+ul {
+  margin    : 0;
+  padding   : 0;
+  list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  margin: 0
+}
+
+p {
+  margin: 0
+}
+
+img {
+  max-width: 100%
+}
+
+.container {
+  max-width    : 1920px;
+  width        : 100%;
+  margin       : 0 auto;
+  padding-left : 124px;
+  padding-right: 124px
+}
+
+.title {
+  font-weight: normal;
+  font-size  : 48px;
+  line-height: 65px;
+  color      : var(--black)
+}
+
+.text {
+  font-weight: 600;
+  font-size  : 24px;
+  line-height: 32px;
+  color      : var(--black)
+}
+
+.text-mini {
+  font-weight: 400;
+  font-size  : 12px;
+  line-height: 16px;
+  color      : var(--black)
+}
+
+::-webkit-input-placeholder {
+  color: var(--gray)
+}
+
+:-ms-input-placeholder {
+  color: var(--gray)
+}
+
+::-moz-placeholder {
+  color: var(--gray)
+}
+
+:-moz-placeholder {
+  color: var(--gray)
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width  : 0;
+  height : 0
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width  : 0;
+  height : 0
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin            : 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+@media(max-width:1600px) {
+  .container {
+    padding-left : 80px;
+    padding-right: 80px
+  }
+}
+
+@media(max-width:1400px) {
+  .container {
+    padding-left : 24px;
+    padding-right: 24px;
+  }
+}
+
+@media(max-width:400px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: 14px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}

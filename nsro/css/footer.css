@@ -1,0 +1,36 @@
+.footer {
+    background-color: #222d35;
+}
+
+.footer__container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left {
+    width: 30%;
+}
+
+.footer__left-logo {
+    height: 60%;
+}
+
+.footer__center {
+}
+
+.footer__center-desc, .footer__item-desc {
+    color: rgba(255,255,255,.75);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
