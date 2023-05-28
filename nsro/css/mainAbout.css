@@ -61,7 +61,7 @@
 .aside {
     display: flex;
     flex-direction: column;
-    width: 76%;
+    width: 46%;
 }
 
 .aside__list {
