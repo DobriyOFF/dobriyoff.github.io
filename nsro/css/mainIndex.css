@@ -138,9 +138,12 @@
     font-size: 14px;
 }
 
+.mySwiper4 {
+    margin-top: 39px;
+}
+
 .qual__wrapper {
     display: flex;
-    margin-top: 39px;
     justify-content: space-between;
 }
 
