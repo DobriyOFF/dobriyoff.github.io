@@ -145,6 +145,10 @@
     background: #4682B4;
   }
 
+  .contact__container {
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
