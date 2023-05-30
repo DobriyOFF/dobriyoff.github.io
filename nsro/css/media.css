@@ -153,6 +153,10 @@
     display: none;
   }
 
+  .menu__list {
+    outline: 1px solid #4682B4;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
