@@ -344,4 +344,8 @@
     .header__contact {
       width: 370px;
     }
+
+    .header__contact-white {
+      color: white;
+    }
 }
