@@ -32,6 +32,11 @@
     background: transparent !important;
 }
 
+.header__contact-tel, .header__contact-tel a {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
 .header__top {
     display: flex;
     position: relative;
