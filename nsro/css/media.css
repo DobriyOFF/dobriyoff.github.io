@@ -198,6 +198,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .header__contact {
+    width: 370px;
+  }
 }
 
 @media screen and (max-width: 700px) {
