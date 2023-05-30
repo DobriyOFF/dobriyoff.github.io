@@ -346,6 +346,6 @@
     }
 
     .header__contact-white {
-      color: white;
+      color: white !important;
     }
 }
