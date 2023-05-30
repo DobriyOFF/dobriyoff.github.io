@@ -149,6 +149,10 @@
     flex-direction: column;
   }
 
+  .footer__item-ico {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
