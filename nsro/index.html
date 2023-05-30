@@ -33,16 +33,18 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/headerAbout.css" />
     <link rel="stylesheet" href="./css/mainIndex.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/effects.css" />
     <link rel="stylesheet" href="./css/media.css" />
 
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/wow.min.js"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script defer src="./js/wow.min.js"></script>
     <script defer src="./js/main.js"></script>
   </head>
   <body>
@@ -156,7 +158,7 @@
             <div
               class="swiper-wrapper info__list "
             >
-              <button class="swiper-slide info__item info__item-btn">
+              <a href="./training.html" class="swiper-slide info__item info__item-btn">
                 <i
                   class="fa fa-graduation-cap info__item-ico"
                   aria-hidden="true"
@@ -165,22 +167,22 @@
                 <p class="info__item-desc">
                   Поможем подготовиться к успешной сдачи экзамена
                 </p>
-              </button>
-              <button class="swiper-slide info__item info__item-btn">
+              </a>
+              <a  href="./construction.html" class="swiper-slide info__item info__item-btn">
                 <i class="fa fa-building info__item-ico" aria-hidden="true"></i>
                 <h2 class="info__item-title">НОК в строительстве</h2>
                 <p class="info__item-desc">
                   Проведение профессионального экзамена в области строительства
                 </p>
-              </button>
-              <button class="swiper-slide info__item info__item-btn">
+              </a>
+              <a  href="./designed.html" class="swiper-slide info__item info__item-btn">
                 <i class="fa fa-folder-o info__item-ico" aria-hidden="true"></i>
                 <h2 class="info__item-title">НОК в проектировании</h2>
                 <p class="info__item-desc">
                   Проведение профессионального экзамена в области проектирования
                 </p>
-              </button>
-              <button class="swiper-slide info__item info__item-btn">
+              </a>
+              <a  href="./rules.html" class="swiper-slide info__item info__item-btn">
                 <i
                   class="fa fa-pencil-square-o info__item-ico"
                   aria-hidden="true"
@@ -190,7 +192,7 @@
                   Независимая оценка квалификации в форме профессионального
                   экзамена
                 </p>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -232,14 +234,14 @@
           <button class="btn qual__btn">ПОДАТЬ ЗАЯВКУ</button>
           <div class="swiper mySwiper4">
             <div class="swiper-wrapper qual__wrapper">
-              <a href="./img/main/doc1.png" class="swiper-slide qual__wrapper-img">
-                <img src="./img/main/doc1.png" alt=""/>
+              <a class="swiper-slide qual__wrapper-img">
+                <img id="myImg" src="/img/main/doc1.png" alt=""/>
               </a>
-              <a href="./img/main/doc2.png" class="swiper-slide qual__wrapper-img">
-                <img src="./img/main/doc2.png" alt=""/>
+              <a class="swiper-slide qual__wrapper-img">
+                <img id="myImg2" src="./img/main/doc2.png" alt=""/>
               </a>
-              <a href="./img/main/doc3.png" class="swiper-slide qual__wrapper-img">
-                <img src="./img/main/doc3.png" alt=""/>
+              <a class="swiper-slide qual__wrapper-img">
+                <img id="myImg3" src="./img/main/doc3.png" alt=""/>
               </a>
             </div>
           </div>
@@ -333,6 +335,43 @@
         </div>
       </div>
     </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div id="myModal2" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close2">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img02">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption2"></div>
+    </div>
+
+    <div id="myModal3" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close3">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img03">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption3"></div>
+    </div>
 
     <script>
       tippy("#nopriz", {

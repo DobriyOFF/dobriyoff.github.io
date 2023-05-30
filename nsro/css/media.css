@@ -113,8 +113,6 @@
       }
 
       .header__top {
-        position: sticky;
-        top: 0;
         margin-left: 0;
         margin-right: 0;
         opacity: 1;
@@ -202,6 +200,14 @@
     .flex {
         flex-direction: column;
     }       
+    
+    .footer__left {
+      text-align: center;
+    }
+
+    .footer__left-logo {
+      width: 60%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -259,5 +265,9 @@
 
     .qual__title {
         font-size: 30px;
+    }
+
+    .footer__left-logo {
+      width: 80%;
     }
 }
