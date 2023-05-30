@@ -190,21 +190,17 @@
     width: 100%;
   }
 
-  .header__contact-mail {
-    display: none;
-  }
-
   .header__contact-add {
     display: none;
   }
 
   .header__contact-tel {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
   }
 
   .header__contact {
-    width: 370px;
+    width: auto;
   }
 }
 
