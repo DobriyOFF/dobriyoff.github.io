@@ -310,6 +310,10 @@
     .off-info {
       padding: 20px;
     }
+
+    .accordion__header {
+      padding-right: 15px;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -335,5 +339,9 @@
 
     .footer__left-logo {
       width: 80%;
+    }
+
+    .header__contact {
+      width: 370px;
     }
 }
