@@ -220,6 +220,10 @@
     .footer__left-logo {
       width: 60%;
     }
+
+    .info__item-title {
+      text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -263,6 +267,23 @@
 
     .info__add {
       margin-top: 20px;
+    }
+
+    .qual__list {
+      margin-top: 20px;
+    }
+
+    .qual__item:nth-child(1)::after, .qual__item:nth-child(even)::before, .qual__item:nth-child(2)::after {
+      content: none;
+    }
+    
+    .qual__item {
+      width: 100%;
+    }
+
+    .qual__btn {
+      margin-left: auto;
+      margin-right: auto;
     }
 }
 
