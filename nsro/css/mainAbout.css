@@ -93,12 +93,12 @@
 }
 .arrow-2-top, 
 .arrow-2-bottom {
-    background: #337AB7;
-    height: 3px;
+    background: black;
+    height: 2px;
     left: -30px;
     position: absolute;
     top: 7px;
-    width: 10px;
+    width: 7px;
 }
 .arrow-2-top {
     top: 8px;
