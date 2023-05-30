@@ -18,7 +18,18 @@
     width: 45%;
     font-weight: 500;
     font-size: 21px;
-    color: white;
+    color: white !important;
+}
+
+.header__contact span, .header__contact a, .header__contact span a {
+    font-weight: 500;
+    font-size: 21px;
+    color: white !important;
+}
+
+.header__contact-white {
+    color: white !important;
+    background: transparent !important;
 }
 
 .header__top {
